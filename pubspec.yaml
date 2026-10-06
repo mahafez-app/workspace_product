@@ -1,0 +1,40 @@
+name: workspace_product
+description: Mahafez workspace and invitation product.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.13.3
+  flutter: ">=3.47.4"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.3.1
+  cloud_firestore: ^6.2.0
+  equatable: ^2.0.8
+  go_router: ^17.2.0
+  rxdart: ^0.28.0
+  intl: ^0.20.2
+  mahafez_core:
+    git:
+      url: https://github.com/mahafez-app/mahafez_core.git
+      ref: v1.0.1
+  mahafez_design_system:
+    git:
+      url: https://github.com/mahafez-app/mahafez_design_system.git
+      ref: v1.0.2
+  identity_service:
+    git:
+      url: https://github.com/mahafez-app/identity_service.git
+      ref: v1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  generate: true

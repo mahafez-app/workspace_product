@@ -1,0 +1,633 @@
+{
+  "@@locale": "en",
+  "errorNetwork": "No internet connection. Please check your network.",
+  "errorAuthUserNotFound": "User not found. Please check your credentials.",
+  "errorAuthWrongPassword": "Incorrect password. Please try again.",
+  "errorAuthEmailInUse": "This email is already registered.",
+  "errorAuthTooManyRequests": "Too many attempts. Please try again later.",
+  "errorAuthUserDisabled": "This account has been disabled.",
+  "errorAuthWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "errorAuthInvalidEmail": "Invalid email address.",
+  "errorUnauthorized": "Unauthorized access. Please log in again.",
+  "errorAuthGeneric": "Authentication failed. Please try again.",
+  "errorForbidden": "Access forbidden.",
+  "errorNotFound": "Resource not found.",
+  "errorConflict": "Resource conflict. Please try again.",
+  "errorUnprocessable": "Unable to process your request.",
+  "errorServer": "Server error. Please try again later.",
+  "errorServerGeneric": "Something went wrong. Please try again.",
+  "errorPermissionDenied": "Permission denied.",
+  "errorCache": "Local storage error. Please try again.",
+  "errorStorage": "File storage error.",
+  "errorValidation": "Validation failed.",
+  "errorValidationWithCode": "Validation failed: {code}",
+  "@errorValidationWithCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "errorUnknown": "An unexpected error occurred.",
+  "startupFallbackTitle": "Just a moment",
+  "startupFallbackMessage": "Please try opening Mahafez again.",
+  "startupFallbackRetryAction": "Try again",
+  "notFoundStatusCode": "404",
+  "notFoundPageTitle": "Page Not Found",
+  "appName": "Mahafez",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "email": "Email",
+  "password": "Password",
+  "displayName": "Name",
+  "yourName": "Your Name",
+  "confirm": "Confirm",
+  "signInWithGoogle": "Sign in with Google",
+  "signInWithEmail": "Sign in with Email",
+  "dontHaveAccount": "Don't have an account?",
+  "alreadyHaveAccount": "Already have an account?",
+  "createAccount": "Create Account",
+  "emailHint": "Enter your email",
+  "passwordHint": "Enter your password",
+  "displayNameHint": "Enter your name",
+  "confirmName": "Confirm Name",
+  "confirmNameMessage": "Please confirm your name to continue",
+  "or": "OR",
+  "appTagline": "Manage your business wallets with ease",
+  "continueWithGoogle": "Continue with Google",
+  "forgotPassword": "Forgot password?",
+  "signUpNow": "Sign Up Now",
+  "emailPlaceholder": "example@email.com",
+  "passwordPlaceholder": "••••••••",
+  "fullName": "Full Name",
+  "fullNamePlaceholder": "e.g. John Doe",
+  "signUpSubtitle": "Create an account and start tracking your business",
+  "whatIsYourName": "What is your name?",
+  "nameWillBeDisplayed": "This name appears when payment status is updated, making transactions easier to track.",
+  "welcome": "Welcome",
+  "totalBalance": "Total Balance",
+  "currentBalance": "Current Balance",
+  "currency": "EGP",
+  "totalOut": "Total Out",
+  "totalIn": "Total In",
+  "yourWallets": "Your Wallets",
+  "viewAll": "View All",
+  "workspaces": "Workspaces",
+  "addWorkspace": "Add Workspace",
+  "addWallet": "Add Wallet",
+  "walletStatusActive": "Active",
+  "activeWalletsCount": "{count, plural, =0{No active wallets} =1{1 active wallet} few{{count} active wallets} other{{count} active wallets}}",
+  "activeWalletsHint": "{count, plural, =0{You haven't added any wallets yet} =1{Total balance across your wallet} other{Total balance across your {count} wallets}}",
+  "lastActivity": "Last Activity",
+  "justNow": "Just Now",
+  "minutesAgo": "{minutes} mins ago",
+  "egp": "EGP",
+  "addWalletTitle": "Add Wallet",
+  "addWalletDescription": "This wallet must be on this device. The app reads new SMS messages from this phone only.",
+  "phoneNumber": "Phone Number",
+  "chooseProvider": "Choose a provider",
+  "allowAndContinue": "Allow and Continue",
+  "notNow": "Not Now",
+  "providerOrange": "Orange Cash",
+  "providerVodafone": "Vodafone Cash",
+  "providerInstapay": "InstaPay",
+  "providerEtisalat": "Etisalat Cash",
+  "providerWePay": "WE Pay",
+  "providerUnknown": "Wallet",
+  "smsPermissionTitle": "Allow Message and Phone Access",
+  "smsPermissionDescription": "The app needs access to messages and phone information to find wallet numbers on this device and sync transactions automatically.",
+  "smsPermissionAutoUpdateTitle": "Automatic Update",
+  "smsPermissionAutoUpdateDesc": "Track payments and expenses as soon as the SMS arrives.",
+  "smsPermissionPrivacyTitle": "Your privacy matters",
+  "smsPermissionPrivacyDesc": "We only read financial messages and device phone numbers required for wallet setup; your data is encrypted and never shared.",
+  "smsPermissionXiaomiTitle": "Xiaomi/Redmi Detected",
+  "smsPermissionXiaomiDescription": "To receive transactions when the app is closed, you must enable 'Autostart' and set Battery Saver to 'No Restrictions' in app settings.",
+  "smsPermissionXiaomiAction": "Fix in Settings",
+  "smsPermissionBatteryOptimizationTitle": "Battery Optimization Active",
+  "smsPermissionBatteryOptimizationDescription": "Android may kill the app in the background to save power. To ensure accuracy, please allow the app to run without battery restrictions.",
+  "smsPermissionBatteryOptimizationAction": "Allow Background Activity",
+  "addWalletAction": "Add Wallet",
+  "createWorkspaceTitle": "Create Workspace",
+  "createWorkspaceDescription": "Workspaces help you organize your business wallets and share access with trusted members in one place.",
+  "workspaceNameLabel": "Workspace Name",
+  "workspaceNameHint": "e.g. Mobile Store",
+  "createWorkspacePreviewLabel": "Workspace Preview",
+  "createWorkspacePreviewFallback": "New Workspace",
+  "createWorkspacePreviewDescription": "After you create the workspace, you can add wallets and invite members.",
+  "workspaceOwner": "Owner",
+  "workspaceOwnerBadge": "Owner",
+  "workspaceMembersCount": "{count, plural, =0{No members} =1{1 member} other{{count} members}}",
+  "@workspaceMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "workspaceWalletsCount": "{count, plural, =0{No wallets} =1{1 wallet} other{{count} wallets}}",
+  "@workspaceWalletsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createWorkspaceAction": "Create Workspace",
+  "createWorkspaceEmptyTitle": "Create your first workspace",
+  "createWorkspaceEmptyDescription": "Bring your wallets together, track activity, and work with your team from one place.",
+  "createWalletEmptyTitle": "Add your first wallet",
+  "createWalletEmptyDescription": "Connect a wallet on this device to start tracking balances and transactions automatically.",
+  "workspaceWallets": "Wallets",
+  "workspaceMembers": "Members",
+  "workspaceInviteMemberAction": "Invite member",
+  "workspaceSettingsTitle": "Workspace Settings",
+  "workspaceSettingsInfoSection": "Workspace Info",
+  "workspaceSettingsInviteByEmailAction": "Invite member",
+  "workspaceSettingsPendingInvitationsSection": "Pending Invitations",
+  "workspaceSettingsPendingInvitationsEmpty": "There are no pending invitations for this workspace right now.",
+  "workspaceSettingsAccessSection": "Your access",
+  "workspaceSettingsMemberDescription": "Review the shared members and linked wallets, remove your own wallets when needed, or leave the workspace.",
+  "workspaceSettingsManageAccessAction": "Manage access",
+  "workspaceSettingsWalletsOwnerDescription": "Review every linked wallet in this workspace and remove any wallet that should no longer be shared.",
+  "workspaceSettingsWalletsMemberDescription": "You can review every linked wallet here, but you can remove only the wallets you added.",
+  "workspaceSettingsWalletsEmptyOwner": "There are no linked wallets in this workspace yet.",
+  "workspaceSettingsWalletsEmptyMember": "There are no linked wallets in this workspace yet.",
+  "workspaceSettingsWalletOwner": "Owner: {ownerName}",
+  "@workspaceSettingsWalletOwner": {
+    "placeholders": {
+      "ownerName": {}
+    }
+  },
+  "workspaceUnknownMember": "Unknown member",
+  "workspaceSettingsWalletReadOnlyTooltip": "Only the wallet owner can remove this wallet",
+  "workspaceSettingsDangerZone": "Sensitive actions",
+  "workspaceSettingsEditNameTitle": "Edit workspace name",
+  "workspaceSettingsEditNameDescription": "Update the visible name used across the workspace and shared views.",
+  "workspaceSettingsEditNameAction": "Save changes",
+  "workspaceSettingsRemoveMemberAction": "Remove",
+  "workspaceSettingsRemoveWalletAction": "Unlink wallet",
+  "workspaceSettingsCancelInvitationAction": "Cancel",
+  "workspaceSettingsLeaveWorkspaceAction": "Leave workspace",
+  "workspaceSettingsLeaveWorkspaceDescription": "Your membership and your linked wallets will be removed from this workspace.",
+  "workspaceSettingsDeleteWorkspaceAction": "Delete workspace",
+  "workspaceSettingsDeleteWorkspaceDescription": "All linked data and access records will be removed permanently.",
+  "workspaceSettingsNameUpdatedSuccess": "Workspace name updated successfully.",
+  "workspaceSettingsMemberRemovedSuccess": "Member removed successfully.",
+  "workspaceSettingsWalletRemovedSuccess": "Wallet unlinked from the workspace successfully.",
+  "workspaceSettingsInvitationCancelledSuccess": "Invitation cancelled successfully.",
+  "workspaceSettingsRemoveMemberConfirmTitle": "Remove member?",
+  "workspaceSettingsRemoveMemberConfirmMessage": "You will remove {memberName} from this workspace, and any wallets they linked here will be removed too. They can be invited again later.",
+  "@workspaceSettingsRemoveMemberConfirmMessage": {
+    "placeholders": {
+      "memberName": {}
+    }
+  },
+  "workspaceSettingsRemoveWalletConfirmTitle": "Unlink wallet?",
+  "workspaceSettingsRemoveWalletConfirmMessage": "The {providerName} wallet linked to {phoneNumber} will be unlinked from this workspace. The wallet itself and its transactions will NOT be deleted.",
+  "@workspaceSettingsRemoveWalletConfirmMessage": {
+    "placeholders": {
+      "providerName": {},
+      "phoneNumber": {}
+    }
+  },
+  "workspaceSettingsCancelInvitationConfirmTitle": "Cancel invitation?",
+  "workspaceSettingsCancelInvitationConfirmMessage": "The invitation sent to {email} will be removed immediately.",
+  "@workspaceSettingsCancelInvitationConfirmMessage": {
+    "placeholders": {
+      "email": {}
+    }
+  },
+  "workspaceSettingsLeaveWorkspaceConfirmTitle": "Leave workspace?",
+  "workspaceSettingsLeaveWorkspaceConfirmMessage": "You will lose access to this workspace, and the wallets you linked here will be removed from it.",
+  "workspaceSettingsDeleteWorkspaceConfirmTitle": "Delete workspace?",
+  "workspaceSettingsDeleteWorkspaceConfirmMessage": "This will permanently delete the workspace, its member access, wallet links, and pending invitations.",
+  "workspaceUnavailableTitle": "Workspace is no longer available",
+  "workspaceUnavailableMessage": "It looks like this workspace was deleted or your access was removed. We’ll take you back home.",
+  "workspaceUnavailableAction": "Back to home",
+  "userSettingsTitle": "Settings",
+  "userSettingsAppSection": "App",
+  "userSettingsBackgroundSection": "Background Reliability",
+  "userSettingsAccountSection": "Account",
+  "userSettingsAboutSection": "About",
+  "userSettingsNoEmailLabel": "No email linked to this account",
+  "userSettingsEditNameAction": "Edit name",
+  "userSettingsEditNameTitle": "Edit name",
+  "userSettingsEditNameDescription": "Update the name shown across the app and activity history.",
+  "userSettingsEditNameSaveAction": "Save changes",
+  "userSettingsNameUpdatedSuccess": "Name updated successfully.",
+  "userSettingsThemeTitle": "Theme",
+  "userSettingsThemeSystemOption": "System",
+  "userSettingsThemeLightOption": "Light",
+  "userSettingsThemeDarkOption": "Dark",
+  "userSettingsLanguageTitle": "Language",
+  "userSettingsLanguageSystemOption": "System default",
+  "userSettingsLanguageEnglishOption": "English",
+  "userSettingsLanguageArabicOption": "Arabic",
+  "userSettingsFontSizeTitle": "Font size",
+  "userSettingsFontSizeDescription": "Adjust the reading scale used across the entire app.",
+  "userSettingsFontSizeSaveAction": "Apply",
+  "userSettingsFontSizePreviewTitle": "Preview",
+  "userSettingsFontSizePreviewBody": "Use the slider to make text smaller or larger across Mahafez.",
+  "userSettingsFontSizeCurrentValue": "Current app size: {value}",
+  "@userSettingsFontSizeCurrentValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "userSettingsFontSizeSmallLabel": "Smaller",
+  "userSettingsFontSizeLargeLabel": "Larger",
+  "userSettingsSmsPermissionTitle": "SMS read permission",
+  "userSettingsSmsPermissionCheckingLabel": "Checking permission status...",
+  "userSettingsSmsPermissionEnabledLabel": "Enabled",
+  "userSettingsSmsPermissionDisabledLabel": "Disabled, and the app cannot work without it.",
+  "userSettingsOpenSystemSettingsAction": "Open settings",
+  "userSettingsSignOutAction": "Sign out",
+  "userSettingsSignOutConfirmTitle": "Sign out?",
+  "userSettingsSignOutConfirmMessage": "This will end your current session on this device. You can sign in again at any time.",
+  "userSettingsDeleteAccountAction": "Delete account",
+  "userSettingsDeleteAccountConfirmTitle": "Delete account?",
+  "userSettingsDeleteAccountConfirmMessage": "This is a sensitive action and, once fully implemented, will permanently remove data linked to your account.",
+  "userSettingsDeleteAccountUnavailableTitle": "Delete account is not available yet",
+  "userSettingsDeleteAccountUnavailableMessage": "A partial delete would leave linked wallets, workspaces, and invitations behind. This action will be enabled after we add a safe full-data cleanup flow.",
+  "userSettingsAppVersionLabel": "App version",
+  "userSettingsWalletsSection": "Your Wallets",
+  "userSettingsWalletsDescription": "Manage the wallets you've added to Mahafez. Deleting a wallet will remove it and all its transactions permanently from all workspaces.",
+  "userSettingsDeleteWalletAction": "Delete Wallet",
+  "userSettingsDeleteWalletConfirmTitle": "Delete Wallet?",
+  "userSettingsDeleteWalletConfirmMessage": "Are you sure you want to delete this {providerName} wallet ({phoneNumber})? This will permanently remove its transactions and notes, and unlink it from all workspaces. This action cannot be undone.",
+  "userSettingsWalletDeletedSuccess": "Wallet deleted successfully.",
+  "commonDeleteAction": "Delete",
+  "commonCancelAction": "Cancel",
+  "workspaceAddWalletsTitle": "Add Wallets",
+  "workspaceAddWalletsAction": "Add Wallets",
+  "workspaceAddWalletsCreateDescription": "Choose which of your wallets should appear in this workspace now. You can add more later.",
+  "workspaceAddWalletsManageDescription": "Share your own wallets with this workspace. Linked wallets become visible to all workspace members.",
+  "workspaceAddSelectedWalletsAction": "Add Selected Wallets",
+  "workspaceContinueToDetailsAction": "Continue to Workspace",
+  "workspaceSkipWalletsAction": "Skip for now",
+  "workspaceWalletAvailable": "Available",
+  "workspaceWalletSelected": "Selected",
+  "workspaceWalletAlreadyAdded": "Already Added",
+  "workspaceNoOwnedWalletsTitle": "You do not have any wallets yet",
+  "workspaceNoOwnedWalletsDescription": "Add a wallet first, then you can share it with this workspace.",
+  "workspaceAllOwnedWalletsLinkedTitle": "All of your wallets are already linked",
+  "workspaceAllOwnedWalletsLinkedDescription": "You can continue to the workspace or add a new wallet later.",
+  "workspaceWalletSelectionSummary": "You own {ownedCount} wallets, and {linkedCount} are already linked to this workspace.",
+  "@workspaceWalletSelectionSummary": {
+    "placeholders": {
+      "ownedCount": {
+        "type": "int"
+      },
+      "linkedCount": {
+        "type": "int"
+      }
+    }
+  },
+  "workspaceWalletsEmptyTitle": "No wallets linked yet",
+  "workspaceWalletsEmptyDescription": "This workspace will show shared wallets here once they are linked.",
+  "workspaceMembersEmpty": "No members have joined this workspace yet.",
+  "invitationsTitle": "Invitations",
+  "invitationsEmptyTitle": "No pending invitations",
+  "invitationsEmptyDescription": "You do not have any pending workspace invitations right now.",
+  "invitationsListDescription": "Review your workspace invitations and choose what to do.",
+  "invitationsPendingCount": "{count, plural, =0{No invitations waiting} =1{1 invitation waiting} other{{count} invitations waiting}}",
+  "@invitationsPendingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "invitationsPendingStatus": "Pending",
+  "invitationsDeletedWorkspaceFallback": "Deleted workspace",
+  "invitationsUnknownInviterFallback": "Unknown sender",
+  "invitationsAcceptAction": "Accept",
+  "invitationsDeclineAction": "Decline",
+  "invitationsRefreshAction": "Refresh list",
+  "invitationsHowItWorksTitle": "How invitations work",
+  "invitationsHowItWorksDescription": "Workspace invitations can only be sent to an existing Mahafez account using the email linked to that account.",
+  "invitationsRecentResponsesTitle": "Recent responses",
+  "invitationSentBy": "Invited by {name}",
+  "@invitationSentBy": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "invitationAcceptSuccess": "You joined {workspaceName} successfully.",
+  "@invitationAcceptSuccess": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationAcceptDetails": "You can start working in this workspace now.",
+  "invitationDeclineSuccess": "You declined the invitation to {workspaceName}.",
+  "@invitationDeclineSuccess": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationDeclineConfirmTitle": "Decline invitation?",
+  "invitationDeclineConfirmMessage": "You will remove the invitation to join {workspaceName}. You can ask the workspace owner to send a new invitation later.",
+  "@invitationDeclineConfirmMessage": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationSentSuccess": "Invitation sent successfully.",
+  "inviteMemberTitle": "Invite a member",
+  "inviteMemberDescription": "Send a workspace invitation to an existing Mahafez account by email. The invited user will see it in their invitations inbox.",
+  "inviteMemberEmailLabel": "Member email",
+  "inviteMemberEmailHint": "name@example.com",
+  "inviteMemberSendAction": "Send invitation",
+  "errorWalletPhoneNumberRequired": "Please enter a phone number",
+  "errorWalletPhoneNumberInvalid": "Please enter a valid Egyptian mobile number.",
+  "errorWalletProviderRequired": "Please select at least one provider",
+  "errorWalletProviderMismatch": "This phone number only supports its matching mobile wallet provider and InstaPay.",
+  "errorWalletAlreadyExists": "This wallet is already added.",
+  "errorWalletAllExists": "All selected wallets are already added for this phone number.",
+  "errorManualTransactionMessageRequired": "Paste the SMS text first.",
+  "errorManualTransactionUnrecognized": "This text does not match the selected wallet's SMS format.",
+  "errorManualTransactionWalletMismatch": "This SMS points to a different wallet than the one currently open.",
+  "errorWorkspaceNameRequired": "Please enter a workspace name",
+  "errorWorkspaceWalletSelectionRequired": "Please select at least one wallet",
+  "errorWorkspaceOwnerRemovalNotAllowed": "The workspace owner cannot be removed.",
+  "errorWorkspaceMemberNotFound": "This member is no longer available in the workspace.",
+  "errorInvitationSelfNotAllowed": "You cannot invite yourself to this workspace.",
+  "errorInvitationAlreadyPending": "A pending invitation already exists for this email.",
+  "errorInvitationUserNotFound": "This email is not linked to any Mahafez account.",
+  "errorInvitationUserAlreadyMember": "This user is already a member of the workspace.",
+  "errorInvitationNotPending": "This invitation is no longer pending.",
+  "transactionTypeReceive": "Receive",
+  "transactionTypeSend": "Send",
+  "reportSummaryReceivedTransactionsTitle": "Received transactions",
+  "reportSummaryReceivedTransactionsDescription": "Number of transactions received during this period.",
+  "reportSummarySentTransactionsTitle": "Sent transactions",
+  "reportSummarySentTransactionsDescription": "Number of transactions sent during this period.",
+  "transactionStatusPaid": "Paid",
+  "transactionStatusUnpaid": "Unpaid",
+  "recentTransactions": "Recent Transactions",
+  "transactions_emptyTitle": "No transactions yet",
+  "transactions_emptyWalletDescription": "This wallet has no transactions yet. New messages will appear here automatically.",
+  "transactions_emptyWorkspaceDescription": "This workspace has no transactions yet. Activity from any linked wallet will appear here automatically.",
+  "workspaceTransactionsCtaDescription": "Open the full transaction history for this workspace to see all transactions from linked wallets in one place.",
+  "workspaceTransactionsCtaDescriptionWithActivity": "Open the full transaction history for this workspace to see all transactions from linked wallets in one place.",
+  "transactions_emptyHintTitle": "Automatic tracking",
+  "transactions_emptyHintDescription": "When activity is detected on a connected wallet, we sync it here for you automatically.",
+  "noTransactionsTitle": "No transactions yet. New messages will appear here automatically.",
+  "deleteWallet": "Delete Wallet",
+  "deleteWalletConfirmTitle": "Delete Wallet",
+  "deleteWalletConfirmMessage": "Are you sure you want to delete this wallet? This action cannot be undone.",
+  "allTransactions": "All Transactions",
+  "viewAllTransactions": "View All Transactions",
+  "walletTransactions": "Wallet Transactions",
+  "walletDetails": "Wallet Details",
+  "transactionsHistory": "Transaction History",
+  "transactionDetails": "Transaction Details",
+  "transactionMessageReceive": "Received {amount} EGP",
+  "transactionMessageSend": "Sent {amount} EGP",
+  "@transactionMessageReceive": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "@transactionMessageSend": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletLabel": "Your wallet",
+  "fromLabel": "From",
+  "toLabel": "To",
+  "viaLabel": "Via",
+  "paymentStatus": "Payment Status",
+  "transactions_filter_all": "All",
+  "transactions_filter_allWallets": "All Wallets",
+  "transactions_filter_allMembers": "All Members",
+  "transactions_paymentStatusAll": "All Statuses",
+  "transactions_searchHint": "Search by last 2+ digits",
+  "transactions_date_today": "Today",
+  "transactions_date_yesterday": "Yesterday",
+  "transactions_date_week": "This Week",
+  "transactions_date_month": "This Month",
+  "transactions_date_customRange": "Custom Range",
+  "transactions_loadMore": "Load More",
+  "transactions_viewingCountOfTotal": "Viewing {count} of {total} transactions",
+  "@transactions_viewingCountOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "transaction_shareReceipt": "Share Receipt",
+  "transaction_receiptHeader": "Transaction Receipt — {type}",
+  "@transaction_receiptHeader": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_amount": "Amount",
+  "transaction_wallet": "Wallet",
+  "transaction_receivedFrom": "Received From",
+  "transaction_sentTo": "Sent To",
+  "transaction_date": "Date",
+  "transaction_dateTime": "Date & Time",
+  "transaction_referenceNumber": "Reference Number",
+  "transaction_history": "Change History",
+  "transaction_markedAs": "Marked as {status}",
+  "@transaction_markedAs": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_by": "By {name}",
+  "@transaction_by": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_notes": "Notes",
+  "transaction_addNote": "Add Note",
+  "transaction_noteHint": "Write your note here…",
+  "transaction_deleteAction": "Delete",
+  "transaction_deleteTitle": "Delete Transaction",
+  "transaction_deleteMessage": "Are you sure you want to delete this transaction? This action cannot be undone.",
+  "transaction_deletedSuccess": "Transaction deleted",
+  "transaction_deleteNoteTitle": "Delete Note",
+  "transaction_deleteNoteMessage": "Are you sure you want to delete this note? This action cannot be undone.",
+  "transaction_noteDeleted": "Note deleted",
+  "transaction_undo": "Undo",
+  "transaction_edited": "Edited",
+  "transaction_cancel": "Cancel",
+  "transaction_save": "Save",
+  "transaction_smsText": "SMS Text",
+  "transaction_typeReceiveLabel": "Receive Transaction",
+  "transaction_typeSendLabel": "Send Transaction",
+  "transaction_errorGeneric": "An error occurred",
+  "transactions_emptyWithFilter": "No transactions match the selected filter",
+  "transactions_emptyWithFilterTitle": "No matching transactions",
+  "transactions_emptyWithFilterDescription": "Try clearing one or more filters to see more activity.",
+  "transactions_clearFilters": "Clear Filters",
+  "transactions_title_wallet": "Transactions: {name}",
+  "transactions_title_workspace": "Workspace: {name}",
+  "workspaceTransactionsTodayCollected": "Collected Today",
+  "workspaceTransactionsTodaySent": "Sent Today",
+  "workspaceTransactionsUnpaidCount": "Unpaid Count",
+  "workspaceTransactionsLatestWallets": "Latest Active Wallets",
+  "workspaceTransactionsLatestWalletsEmpty": "No wallet activity yet.",
+  "@transactions_title_wallet": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@transactions_title_workspace": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorTransactionNotFound": "This transaction is no longer available.",
+  "errorTransactionAlreadyExists": "This transaction has already been tracked.",
+  "fullNameValidationEmpty": "Please enter your name",
+  "transactions_filterTitle": "Filters",
+  "transactions_filterApply": "Apply Filters",
+  "transactions_filterReset": "Reset",
+  "transactions_filterActiveCount": "{count} active {count, plural, =1{filter} other{filters}}",
+  "@transactions_filterActiveCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transactions_filterType": "Type",
+  "transactions_filterPaidStatus": "Status",
+  "transactions_filterDate": "Date",
+  "transactions_filterMember": "Member",
+  "transactions_filterWallet": "Wallet",
+  "reports_total_transactions": "Transactions Count",
+  "reports_all_wallets": "All Wallets",
+  "reports_period_today": "Today",
+  "reports_period_yesterday": "Yesterday",
+  "reports_period_lastWeek": "Last Week",
+  "reports_period_lastMonth": "Last Month",
+  "reports_period_custom": "Custom Range",
+  "reports_stat_average": "Daily Average",
+  "reports_balance_label": "Net Cash Flow",
+  "reports_performance_label": "Financial Performance",
+  "reports_wallet_title": "Wallet Reports",
+  "reports_workspace_title": "Workspace Reports",
+  "wallet_statsFrom": "Stats from {date}",
+  "@wallet_statsFrom": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "wallet_resetStats": "Reset Tracked Metrics",
+  "wallet_resetStatsDescription": "Are you sure you want to reset the tracked metrics for this wallet? This will zero out your total incoming and outgoing amounts since the last reset. Your current balance will be preserved.",
+  "wallet_resetStatsAction": "Reset Stats",
+  "walletBalanceEditTitle": "Update Current Balance",
+  "walletBalanceEditDescription": "Use this if a historical SMS was missed or your tracked balance needs to be corrected manually.",
+  "walletBalanceEditAction": "Update Balance",
+  "walletBalanceEditHint": "Enter the latest balance",
+  "walletBalanceEditInvalid": "Enter a valid balance amount.",
+  "walletBalanceEditSuccess": "Current balance updated.",
+  "walletBalanceEditSuggested": "Latest detected balance: {amount}",
+  "@walletBalanceEditSuggested": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletManualTransactionEntryAction": "Paste SMS Transaction",
+  "walletManualTransactionTitle": "Add Transaction From SMS",
+  "walletManualTransactionDescription": "Paste the original transaction SMS here. We will parse it with the same wallet matching and transaction rules used by the automatic SMS flow.",
+  "walletManualTransactionFieldLabel": "SMS text",
+  "walletManualTransactionFieldHint": "Paste the full transaction message",
+  "walletManualTransactionPasteAction": "Paste from clipboard",
+  "walletManualTransactionAnalyzeAction": "Process SMS",
+  "walletManualTransactionSaveAction": "Save Transaction",
+  "walletManualTransactionConfirmAction": "Save to this wallet",
+  "walletManualTransactionForceAction": "Save Anyway",
+  "walletManualTransactionBlockedAction": "Belongs to another wallet",
+  "walletManualTransactionSaved": "Transaction added successfully.",
+  "walletManualTransactionReviewTitle": "Review before saving",
+  "walletManualTransactionReviewDescription": "The SMS was parsed successfully, but the wallet could not be confirmed with full confidence. Review the details before continuing.",
+  "walletManualTransactionExplicitMismatchTitle": "This SMS belongs to another wallet",
+  "walletManualTransactionExplicitMismatchDescription": "The message explicitly mentions a wallet phone number that does not match the wallet you opened.",
+  "walletManualTransactionInferredMismatchTitle": "Another wallet looks more likely",
+  "walletManualTransactionInferredMismatchDescription": "The balance and matching rules suggest a different wallet. Save here only if you are sure this SMS should stay under the current wallet.",
+  "walletManualTransactionSuggestedWalletLabel": "Suggested wallet",
+  "walletManualTransactionBalanceChip": "Balance after SMS: {amount}",
+  "@walletManualTransactionBalanceChip": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletManualTransactionPhoneChip": "Mentioned wallet: {phoneNumber}",
+  "@walletManualTransactionPhoneChip": {
+    "placeholders": {
+      "phoneNumber": {}
+    }
+  },
+  "walletSyncTransactionsTitle": "Sync missed transactions",
+  "walletSyncTransactionsDescription": "Check recent SMS messages for transactions that arrived after your latest saved wallet activity.",
+  "walletSyncTransactionsAction": "Sync transactions",
+  "walletSyncTransactionsReviewTitle": "Review missing transactions",
+  "walletSyncTransactionsFoundCount": "{count, plural, =0{No missing transactions found} =1{1 missing transaction found} other{{count} missing transactions found}}",
+  "@walletSyncTransactionsFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walletSyncTransactionsFromDate": "Checking messages after {date}",
+  "@walletSyncTransactionsFromDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "walletSyncTransactionsSelectedCount": "{count, plural, =0{No transactions selected} =1{1 transaction selected} other{{count} transactions selected}}",
+  "@walletSyncTransactionsSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walletSyncTransactionsSaveAction": "Add selected",
+  "walletSyncTransactionsEmptyTitle": "No missing transactions found",
+  "walletSyncTransactionsEmptyDescription": "We did not find any unsaved SMS transactions for this wallet in the recent inbox history.",
+  "walletSyncTransactionsEmptySinceDescription": "We did not find any unsaved SMS transactions after {date}.",
+  "@walletSyncTransactionsEmptySinceDescription": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "walletSyncTransactionsSavedSuccess": "{count, plural, =1{1 transaction added successfully.} other{{count} transactions added successfully.}}",
+  "@walletSyncTransactionsSavedSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

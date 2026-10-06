@@ -1,0 +1,633 @@
+{
+  "@@locale": "ar",
+  "errorNetwork": "لا يوجد اتصال بالإنترنت. اتأكد من الشبكة وحاول مرة تانية.",
+  "errorAuthUserNotFound": "الحساب غير موجود. اتأكد من بيانات الدخول.",
+  "errorAuthWrongPassword": "كلمة المرور غير صحيحة. حاول مرة تانية.",
+  "errorAuthEmailInUse": "هذا البريد الإلكتروني مسجل بالفعل.",
+  "errorAuthTooManyRequests": "عدد المحاولات كبير جداً. حاول مرة تانية بعد شوية.",
+  "errorAuthUserDisabled": "تم تعطيل هذا الحساب.",
+  "errorAuthWeakPassword": "كلمة المرور ضعيفة. اختر كلمة مرور أقوى.",
+  "errorAuthInvalidEmail": "البريد الإلكتروني غير صحيح.",
+  "errorUnauthorized": "انتهت الجلسة. سجل دخولك مرة تانية.",
+  "errorAuthGeneric": "تعذر تسجيل الدخول الآن. حاول مرة تانية.",
+  "errorForbidden": "لا يمكنك تنفيذ هذا الإجراء.",
+  "errorNotFound": "المطلوب غير موجود.",
+  "errorConflict": "في تعارض في البيانات. حاول مرة تانية.",
+  "errorUnprocessable": "تعذر تنفيذ طلبك. راجع البيانات وحاول تاني.",
+  "errorServer": "في مشكلة في الخدمة حالياً. حاول بعد شوية.",
+  "errorServerGeneric": "حصلت مشكلة. حاول مرة تانية.",
+  "errorPermissionDenied": "الصلاحية غير متاحة.",
+  "errorCache": "حصلت مشكلة في حفظ البيانات على الجهاز. حاول مرة تانية.",
+  "errorStorage": "حصلت مشكلة في حفظ الملف.",
+  "errorValidation": "راجع البيانات المدخلة.",
+  "errorValidationWithCode": "راجع البيانات المدخلة: {code}",
+  "@errorValidationWithCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "errorUnknown": "حصلت مشكلة غير متوقعة.",
+  "startupFallbackTitle": "لحظة من فضلك",
+  "startupFallbackMessage": "حاول فتح محافظ مرة أخرى.",
+  "startupFallbackRetryAction": "حاول مرة أخرى",
+  "notFoundStatusCode": "404",
+  "notFoundPageTitle": "الصفحة غير موجودة",
+  "appName": "محافظ",
+  "signIn": "تسجيل الدخول",
+  "signUp": "إنشاء حساب",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "displayName": "الاسم",
+  "yourName": "اسمك",
+  "confirm": "تأكيد",
+  "signInWithGoogle": "تسجيل الدخول بجوجل",
+  "signInWithEmail": "تسجيل الدخول بالبريد الإلكتروني",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "alreadyHaveAccount": "لديك حساب بالفعل؟",
+  "createAccount": "إنشاء حساب",
+  "emailHint": "أدخل بريدك الإلكتروني",
+  "passwordHint": "أدخل كلمة المرور",
+  "displayNameHint": "أدخل اسمك",
+  "confirmName": "تأكيد الاسم",
+  "confirmNameMessage": "أكد اسمك عشان نكمل",
+  "or": "أو",
+  "appTagline": "تابع محافظ شغلك بسهولة ومن مكان واحد",
+  "continueWithGoogle": "كمل باستخدام جوجل",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "signUpNow": "أنشئ حسابك",
+  "emailPlaceholder": "example@email.com",
+  "passwordPlaceholder": "••••••••",
+  "fullName": "الاسم الكامل",
+  "fullNamePlaceholder": "مثلاً: أحمد محمود",
+  "signUpSubtitle": "أنشئ حساب جديد وابدأ تتابع شغلك بسهولة",
+  "whatIsYourName": "اسمك إيه؟",
+  "nameWillBeDisplayed": "الاسم ده هيظهر وقت تحديث حالة الدفع عشان متابعة العمليات تبقى أسهل.",
+  "welcome": "أهلاً بيك",
+  "totalBalance": "إجمالي الرصيد",
+  "currentBalance": "الرصيد الحالي",
+  "currency": "ج.م",
+  "totalOut": "إجمالي الصادر",
+  "totalIn": "إجمالي الوارد",
+  "yourWallets": "محافظك",
+  "viewAll": "عرض الكل",
+  "workspaces": "مساحات العمل",
+  "addWorkspace": "إضافة مساحة عمل",
+  "addWallet": "إضافة محفظة",
+  "walletStatusActive": "نشط",
+  "activeWalletsCount": "{count, plural, =0{لا توجد محافظ نشطة} =1{محفظة واحدة نشطة} =2{محفظتان نشطتان} few{{count} محافظ نشطة} many{{count} محفظة نشطة} other{{count} محفظة نشطة}}",
+  "activeWalletsHint": "{count, plural, =0{لم تقم بإضافة أي محافظ بعد} =1{إجمالي الرصيد لمحفظتك} =2{إجمالي الرصيد لمحفظتيك} few{إجمالي الرصيد لـ {count} من محافظك} many{إجمالي الرصيد لـ {count} من محافظك} other{إجمالي الرصيد لـ {count} من محافظك}}",
+  "lastActivity": "آخر نشاط",
+  "justNow": "الآن",
+  "minutesAgo": "منذ {minutes} دقيقة",
+  "egp": "ج.م",
+  "addWalletTitle": "إضافة محفظة",
+  "addWalletDescription": "لازم تكون المحفظة دي موجودة على الموبايل ده، لأن التطبيق بيقرأ رسائل الـSMS الجديدة من هنا فقط.",
+  "phoneNumber": "رقم الموبايل",
+  "chooseProvider": "اختر الشركة",
+  "allowAndContinue": "اسمح وكمل",
+  "notNow": "لاحقاً",
+  "providerOrange": "أورانج كاش",
+  "providerVodafone": "فودافون كاش",
+  "providerInstapay": "إنستا باي",
+  "providerEtisalat": "اتصالات كاش",
+  "providerWePay": "وي باي",
+  "providerUnknown": "محفظة أخرى",
+  "smsPermissionTitle": "اسمح بالوصول للرسائل والموبايل",
+  "smsPermissionDescription": "التطبيق محتاج صلاحية الرسائل والموبايل عشان يتعرف على أرقام المحافظ الموجودة على الجهاز ويضيف الحركات الجديدة تلقائياً.",
+  "smsPermissionAutoUpdateTitle": "تحديث تلقائي",
+  "smsPermissionAutoUpdateDesc": "أي حركة جديدة بتتسجل أول ما رسالة العملية توصل.",
+  "smsPermissionPrivacyTitle": "خصوصيتك محفوظة",
+  "smsPermissionPrivacyDesc": "بنقرأ فقط الرسائل الخاصة بالمعاملات وأرقام الموبايل اللازمة لإعداد المحافظ. بياناتك مشفرة ومش بنشاركها مع أي حد.",
+  "smsPermissionXiaomiTitle": "تم اكتشاف جهاز Xiaomi/Redmi",
+  "smsPermissionXiaomiDescription": "عشان المعاملات توصلك والتطبيق مقفول، لازم تفعل خاصية 'التشغيل التلقائي' وتخلي موفر البطارية 'بدون قيود' في إعدادات النظام.",
+  "smsPermissionXiaomiAction": "ضبط الإعدادات",
+  "smsPermissionBatteryOptimizationTitle": "تحسين البطارية نشط",
+  "smsPermissionBatteryOptimizationDescription": "نظام أندرويد ممكن يقفل التطبيق في الخلفية لتوفير الطاقة. عشان نضمن دقة التسجيل، يفضل تسمح للتطبيق بالشغل بدون قيود البطارية.",
+  "smsPermissionBatteryOptimizationAction": "السماح بالعمل في الخلفية",
+  "addWalletAction": "أضف المحفظة",
+  "createWorkspaceTitle": "إنشاء مساحة عمل",
+  "createWorkspaceDescription": "مساحة العمل بتساعدك تجمع محافظ شغلك وتشاركها مع الناس الموثوق فيهم من مكان واحد.",
+  "workspaceNameLabel": "اسم مساحة العمل",
+  "workspaceNameHint": "مثلاً: محل موبايلات",
+  "createWorkspacePreviewLabel": "معاينة مساحة العمل",
+  "createWorkspacePreviewFallback": "مساحة عمل جديدة",
+  "createWorkspacePreviewDescription": "بعد إنشاء مساحة العمل، تقدر تضيف محافظ وتبعت دعوات للأعضاء.",
+  "workspaceOwner": "المالك",
+  "workspaceOwnerBadge": "مالك",
+  "workspaceMembersCount": "{count, plural, =0{لا يوجد أعضاء} =1{عضو واحد} =2{عضوان} few{{count} أعضاء} many{{count} عضوًا} other{{count} عضو}}",
+  "@workspaceMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "workspaceWalletsCount": "{count, plural, =0{لا توجد محافظ} =1{محفظة واحدة} =2{محفظتان} few{{count} محافظ} many{{count} محفظة} other{{count} محفظة}}",
+  "@workspaceWalletsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "createWorkspaceAction": "إنشاء مساحة العمل",
+  "createWorkspaceEmptyTitle": "ابدأ بأول مساحة عمل",
+  "createWorkspaceEmptyDescription": "اجمع محافظ شغلك، تابع الحركة، وخلي فريقك يشتغل معاك من مكان واحد.",
+  "createWalletEmptyTitle": "أضف أول محفظة",
+  "createWalletEmptyDescription": "اربط محفظة موجودة على هذا الجهاز علشان تبدأ تتابع الرصيد والمعاملات تلقائياً.",
+  "workspaceWallets": "المحافظ",
+  "workspaceMembers": "الأعضاء",
+  "workspaceInviteMemberAction": "دعوة عضو",
+  "workspaceSettingsTitle": "إعدادات المساحة",
+  "workspaceSettingsInfoSection": "بيانات المساحة",
+  "workspaceSettingsInviteByEmailAction": "دعوة عضو",
+  "workspaceSettingsPendingInvitationsSection": "الدعوات المعلقة",
+  "workspaceSettingsPendingInvitationsEmpty": "لا توجد دعوات معلقة لهذه المساحة حالياً.",
+  "workspaceSettingsAccessSection": "وصولك للمساحة",
+  "workspaceSettingsMemberDescription": "راجع الأعضاء والمحافظ المرتبطة، واحذف محافظك عند الحاجة أو غادر المساحة.",
+  "workspaceSettingsManageAccessAction": "إدارة الوصول",
+  "workspaceSettingsWalletsOwnerDescription": "راجع كل المحافظ المرتبطة بهذه المساحة، واحذف أي محفظة لا يجب أن تبقى مشتركة.",
+  "workspaceSettingsWalletsMemberDescription": "تقدر تشوف كل المحافظ المرتبطة هنا، لكن تحذف فقط المحافظ التي أضفتها أنت.",
+  "workspaceSettingsWalletsEmptyOwner": "لا توجد محافظ مرتبطة بهذه المساحة حتى الآن.",
+  "workspaceSettingsWalletsEmptyMember": "لا توجد محافظ مرتبطة بهذه المساحة حتى الآن.",
+  "workspaceSettingsWalletOwner": "المالك: {ownerName}",
+  "@workspaceSettingsWalletOwner": {
+    "placeholders": {
+      "ownerName": {}
+    }
+  },
+  "workspaceUnknownMember": "عضو غير معروف",
+  "workspaceSettingsWalletReadOnlyTooltip": "فقط مالك المحفظة يمكنه حذفها",
+  "workspaceSettingsDangerZone": "إجراءات حساسة",
+  "workspaceSettingsEditNameTitle": "تعديل اسم المساحة",
+  "workspaceSettingsEditNameDescription": "غيّر الاسم الظاهر للمساحة في كل الشاشات المشتركة.",
+  "workspaceSettingsEditNameAction": "حفظ التعديلات",
+  "workspaceSettingsRemoveMemberAction": "حذف",
+  "workspaceSettingsRemoveWalletAction": "إلغاء ربط المحفظة",
+  "workspaceSettingsCancelInvitationAction": "إلغاء",
+  "workspaceSettingsLeaveWorkspaceAction": "مغادرة المساحة",
+  "workspaceSettingsLeaveWorkspaceDescription": "سيتم حذف عضويتك والمحافظ التي ربطتها بهذه المساحة.",
+  "workspaceSettingsDeleteWorkspaceAction": "حذف مساحة العمل",
+  "workspaceSettingsDeleteWorkspaceDescription": "سيتم حذف كل البيانات المرتبطة بالمساحة نهائياً.",
+  "workspaceSettingsNameUpdatedSuccess": "تم تغيير اسم مساحة العمل.",
+  "workspaceSettingsMemberRemovedSuccess": "تم حذف العضو.",
+  "workspaceSettingsWalletRemovedSuccess": "تم إلغاء ربط المحفظة من مساحة العمل بنجاح.",
+  "workspaceSettingsInvitationCancelledSuccess": "تم إلغاء الدعوة.",
+  "workspaceSettingsRemoveMemberConfirmTitle": "حذف العضو؟",
+  "workspaceSettingsRemoveMemberConfirmMessage": "سيتم حذف {memberName} من مساحة العمل، وسيتم أيضاً حذف أي محافظ ربطها بهذه المساحة. تقدر تبعت له دعوة مرة تانية لاحقاً.",
+  "@workspaceSettingsRemoveMemberConfirmMessage": {
+    "placeholders": {
+      "memberName": {}
+    }
+  },
+  "workspaceSettingsRemoveWalletConfirmTitle": "إلغاء ربط المحفظة؟",
+  "workspaceSettingsRemoveWalletConfirmMessage": "سيتم إلغاء ربط محفظة {providerName} المرتبطة بالرقم {phoneNumber} من مساحة العمل دي. المحفظة وباقي بياناتها مش هيتم حذفهم.",
+  "@workspaceSettingsRemoveWalletConfirmMessage": {
+    "placeholders": {
+      "providerName": {},
+      "phoneNumber": {}
+    }
+  },
+  "workspaceSettingsCancelInvitationConfirmTitle": "إلغاء الدعوة؟",
+  "workspaceSettingsCancelInvitationConfirmMessage": "سيتم إلغاء الدعوة المرسلة إلى {email} فوراً.",
+  "@workspaceSettingsCancelInvitationConfirmMessage": {
+    "placeholders": {
+      "email": {}
+    }
+  },
+  "workspaceSettingsLeaveWorkspaceConfirmTitle": "مغادرة مساحة العمل؟",
+  "workspaceSettingsLeaveWorkspaceConfirmMessage": "ستفقد الوصول إلى هذه المساحة، وسيتم حذف المحافظ التي ربطتها بها.",
+  "workspaceSettingsDeleteWorkspaceConfirmTitle": "حذف مساحة العمل؟",
+  "workspaceSettingsDeleteWorkspaceConfirmMessage": "سيتم حذف مساحة العمل وأذونات الأعضاء وربط المحافظ والدعوات المعلقة نهائياً.",
+  "workspaceUnavailableTitle": "مساحة العمل لم تعد متاحة",
+  "workspaceUnavailableMessage": "يبدو أن مساحة العمل دي تم حذفها أو تم إلغاء وصولك لها. هنرجعك للرئيسية.",
+  "workspaceUnavailableAction": "العودة للرئيسية",
+  "userSettingsTitle": "الإعدادات",
+  "userSettingsAppSection": "التطبيق",
+  "userSettingsBackgroundSection": "استقرار العمل في الخلفية",
+  "userSettingsAccountSection": "الحساب",
+  "userSettingsAboutSection": "عن التطبيق",
+  "userSettingsNoEmailLabel": "لا يوجد بريد إلكتروني مرتبط",
+  "userSettingsEditNameAction": "تعديل الاسم",
+  "userSettingsEditNameTitle": "تعديل الاسم",
+  "userSettingsEditNameDescription": "غيّر الاسم الظاهر في التطبيق وسجل النشاط.",
+  "userSettingsEditNameSaveAction": "حفظ التعديلات",
+  "userSettingsNameUpdatedSuccess": "تم تحديث الاسم بنجاح.",
+  "userSettingsThemeTitle": "المظهر",
+  "userSettingsThemeSystemOption": "تلقائي حسب الجهاز",
+  "userSettingsThemeLightOption": "فاتح",
+  "userSettingsThemeDarkOption": "داكن",
+  "userSettingsLanguageTitle": "اللغة",
+  "userSettingsLanguageSystemOption": "لغة الجهاز",
+  "userSettingsLanguageEnglishOption": "English",
+  "userSettingsLanguageArabicOption": "العربية",
+  "userSettingsFontSizeTitle": "حجم الخط",
+  "userSettingsFontSizeDescription": "تحكم في مقياس القراءة المستخدم في التطبيق كله.",
+  "userSettingsFontSizeSaveAction": "تطبيق",
+  "userSettingsFontSizePreviewTitle": "معاينة",
+  "userSettingsFontSizePreviewBody": "استخدم شريط التمرير لتصغير أو تكبير النص في محافظ كله.",
+  "userSettingsFontSizeCurrentValue": "الحجم الحالي في التطبيق: {value}",
+  "@userSettingsFontSizeCurrentValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "userSettingsFontSizeSmallLabel": "أصغر",
+  "userSettingsFontSizeLargeLabel": "أكبر",
+  "userSettingsSmsPermissionTitle": "إذن قراءة الرسائل",
+  "userSettingsSmsPermissionCheckingLabel": "جاري التحقق من حالة الإذن...",
+  "userSettingsSmsPermissionEnabledLabel": "مفعّل",
+  "userSettingsSmsPermissionDisabledLabel": "غير مفعّل، والتطبيق لن يعمل بدونه.",
+  "userSettingsOpenSystemSettingsAction": "فتح الإعدادات",
+  "userSettingsSignOutAction": "تسجيل الخروج",
+  "userSettingsSignOutConfirmTitle": "تسجيل الخروج؟",
+  "userSettingsSignOutConfirmMessage": "سيتم إنهاء جلستك الحالية على هذا الجهاز، ويمكنك تسجيل الدخول مرة أخرى في أي وقت.",
+  "userSettingsDeleteAccountAction": "حذف الحساب",
+  "userSettingsDeleteAccountConfirmTitle": "حذف الحساب؟",
+  "userSettingsDeleteAccountConfirmMessage": "هذا الإجراء حساس وقد يؤدي إلى حذف البيانات المرتبطة بحسابك نهائياً بعد تفعيله بالكامل.",
+  "userSettingsDeleteAccountUnavailableTitle": "حذف الحساب غير متاح حالياً",
+  "userSettingsDeleteAccountUnavailableMessage": "إخفاء الحساب فقط لا يكفي هنا، لأننا نحتاج أولاً إلى تنظيف المحافظ ومساحات العمل والدعوات المرتبطة به بشكل آمن. سنفعل هذا الإجراء بعد إضافة مسار حذف كامل للبيانات.",
+  "userSettingsAppVersionLabel": "إصدار التطبيق",
+  "userSettingsWalletsSection": "محافظك",
+  "userSettingsWalletsDescription": "إدارة المحافظ اللي أضفتها لمحافظ. حذف المحفظة هيشيلها هي وكل معاملاتها نهائياً من كل مساحات العمل.",
+  "userSettingsDeleteWalletAction": "حذف المحفظة",
+  "userSettingsDeleteWalletConfirmTitle": "حذف المحفظة؟",
+  "userSettingsDeleteWalletConfirmMessage": "هل أنت متأكد أنك عايز تحذف محفظة {providerName} ({phoneNumber})؟ ده هيحذف كل معاملاتها وملاحظاتها نهائياً، وهيلغي ربطها من كل مساحات العمل. الإجراء ده لا يمكن التراجع عنه.",
+  "userSettingsWalletDeletedSuccess": "تم حذف المحفظة بنجاح.",
+  "commonDeleteAction": "حذف",
+  "commonCancelAction": "إلغاء",
+  "workspaceAddWalletsTitle": "إضافة محافظ",
+  "workspaceAddWalletsAction": "إضافة محافظ",
+  "workspaceAddWalletsCreateDescription": "اختر المحافظ التي تريد تظهر في مساحة العمل الآن. وتقدر تضيف المزيد لاحقاً.",
+  "workspaceAddWalletsManageDescription": "شارك محافظك مع مساحة العمل. أي محفظة تضيفها هنا هتظهر لكل أعضاء المساحة.",
+  "workspaceAddSelectedWalletsAction": "إضافة المحافظ المحددة",
+  "workspaceContinueToDetailsAction": "ادخل على مساحة العمل",
+  "workspaceSkipWalletsAction": "تخطي حالياً",
+  "workspaceWalletAvailable": "متاحة",
+  "workspaceWalletSelected": "محددة",
+  "workspaceWalletAlreadyAdded": "مضافة",
+  "workspaceNoOwnedWalletsTitle": "لا تملك أي محافظ بعد",
+  "workspaceNoOwnedWalletsDescription": "أضف محفظة أولاً، وبعدها تقدر تشاركها مع مساحة العمل.",
+  "workspaceAllOwnedWalletsLinkedTitle": "كل محافظك مرتبطة بالفعل",
+  "workspaceAllOwnedWalletsLinkedDescription": "تقدر تدخل على مساحة العمل أو تضيف محفظة جديدة لاحقاً.",
+  "workspaceWalletSelectionSummary": "عندك {ownedCount} محافظ، و{linkedCount} منها مضافين بالفعل في مساحة العمل.",
+  "@workspaceWalletSelectionSummary": {
+    "placeholders": {
+      "ownedCount": {
+        "type": "int"
+      },
+      "linkedCount": {
+        "type": "int"
+      }
+    }
+  },
+  "workspaceWalletsEmptyTitle": "لا توجد محافظ مرتبطة بعد",
+  "workspaceWalletsEmptyDescription": "المحافظ المشتركة هتظهر هنا بعد ربطها بمساحة العمل.",
+  "workspaceMembersEmpty": "لا يوجد أعضاء في مساحة العمل حتى الآن.",
+  "invitationsTitle": "الدعوات",
+  "invitationsEmptyTitle": "لا توجد دعوات معلقة",
+  "invitationsEmptyDescription": "لا توجد عندك دعوات معلقة حالياً.",
+  "invitationsListDescription": "راجع الدعوات اللي وصلتك واختر إذا كنت هتقبل أو ترفض.",
+  "invitationsPendingCount": "{count, plural, =0{لا توجد دعوات بانتظار الرد} =1{دعوة واحدة بانتظار الرد} =2{دعوتان بانتظار الرد} few{{count} دعوات بانتظار الرد} many{{count} دعوة بانتظار الرد} other{{count} دعوة بانتظار الرد}}",
+  "@invitationsPendingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "invitationsPendingStatus": "معلقة",
+  "invitationsDeletedWorkspaceFallback": "مساحة عمل محذوفة",
+  "invitationsUnknownInviterFallback": "مرسل غير معروف",
+  "invitationsAcceptAction": "قبول",
+  "invitationsDeclineAction": "رفض",
+  "invitationsRefreshAction": "تحديث القائمة",
+  "invitationsHowItWorksTitle": "كيف تعمل الدعوات",
+  "invitationsHowItWorksDescription": "يمكن إرسال الدعوة فقط إلى حساب محافظ موجود بالفعل باستخدام البريد الإلكتروني المسجل به.",
+  "invitationsRecentResponsesTitle": "أحدث الردود",
+  "invitationSentBy": "دعوة من {name}",
+  "@invitationSentBy": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "invitationAcceptSuccess": "تم انضمامك إلى مساحة العمل {workspaceName} بنجاح.",
+  "@invitationAcceptSuccess": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationAcceptDetails": "تقدر تبدأ الشغل داخل مساحة العمل الآن.",
+  "invitationDeclineSuccess": "تم رفض دعوتك إلى مساحة العمل {workspaceName}.",
+  "@invitationDeclineSuccess": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationDeclineConfirmTitle": "رفض الدعوة؟",
+  "invitationDeclineConfirmMessage": "سيتم حذف الدعوة للانضمام إلى مساحة العمل {workspaceName}. تقدر تطلب من مالك المساحة يبعتها لك مرة تانية لاحقاً.",
+  "@invitationDeclineConfirmMessage": {
+    "placeholders": {
+      "workspaceName": {}
+    }
+  },
+  "invitationSentSuccess": "تم إرسال الدعوة بنجاح.",
+  "inviteMemberTitle": "دعوة عضو",
+  "inviteMemberDescription": "ابعت دعوة لمساحة العمل على البريد الإلكتروني لحساب محافظ موجود بالفعل. الشخص المدعو هيلاقيها في شاشة الدعوات.",
+  "inviteMemberEmailLabel": "بريد العضو",
+  "inviteMemberEmailHint": "name@example.com",
+  "inviteMemberSendAction": "إرسال الدعوة",
+  "errorWalletPhoneNumberRequired": "أدخل رقم الموبايل",
+  "errorWalletPhoneNumberInvalid": "أدخل رقم موبايل مصري صحيح.",
+  "errorWalletProviderRequired": "اختر شركة واحدة على الأقل",
+  "errorWalletProviderMismatch": "رقم الموبايل ده يدعم فقط شركة المحفظة المطابقة له وإنستاباي.",
+  "errorWalletAlreadyExists": "هذه المحفظة مضافة بالفعل.",
+  "errorWalletAllExists": "كل المحافظ المختارة مضافة بالفعل لهذا الرقم.",
+  "errorManualTransactionMessageRequired": "الصق نص الرسالة أولاً.",
+  "errorManualTransactionUnrecognized": "هذا النص لا يطابق صيغة رسائل هذه المحفظة.",
+  "errorManualTransactionWalletMismatch": "الرسالة تشير إلى محفظة مختلفة عن المحفظة المفتوحة حالياً.",
+  "errorWorkspaceNameRequired": "أدخل اسم مساحة العمل",
+  "errorWorkspaceWalletSelectionRequired": "اختر محفظة واحدة على الأقل",
+  "errorWorkspaceOwnerRemovalNotAllowed": "لا يمكن حذف مالك مساحة العمل.",
+  "errorWorkspaceMemberNotFound": "العضو ده مش موجود في مساحة العمل حالياً.",
+  "errorInvitationSelfNotAllowed": "لا يمكنك دعوة نفسك إلى مساحة العمل.",
+  "errorInvitationAlreadyPending": "في دعوة معلقة بالفعل لهذا البريد الإلكتروني.",
+  "errorInvitationUserNotFound": "البريد الإلكتروني ده غير مرتبط بحساب محافظ.",
+  "errorInvitationUserAlreadyMember": "هذا المستخدم عضو بالفعل في مساحة العمل.",
+  "errorInvitationNotPending": "الدعوة دي لم تعد معلقة.",
+  "transactionTypeReceive": "استلام",
+  "transactionTypeSend": "إرسال",
+  "reportSummaryReceivedTransactionsTitle": "المعاملات المستلمة",
+  "reportSummaryReceivedTransactionsDescription": "عدد المعاملات التي تم استلامها خلال هذه الفترة.",
+  "reportSummarySentTransactionsTitle": "المعاملات المرسلة",
+  "reportSummarySentTransactionsDescription": "عدد المعاملات التي تم إرسالها خلال هذه الفترة.",
+  "transactionStatusPaid": "مدفوع",
+  "transactionStatusUnpaid": "غير مدفوع",
+  "recentTransactions": "آخر المعاملات",
+  "transactions_emptyTitle": "لا توجد معاملات بعد",
+  "transactions_emptyWalletDescription": "لا توجد معاملات على هذه المحفظة حتى الآن. أول ما توصلك رسائل جديدة هتظهر هنا تلقائياً.",
+  "transactions_emptyWorkspaceDescription": "لا توجد معاملات داخل مساحة العمل دي حتى الآن. أي نشاط من المحافظ المرتبطة هيظهر هنا تلقائياً.",
+  "workspaceTransactionsCtaDescription": "افتح كل معاملات مساحة العمل دي علشان تشوف كل معاملات المحافظ المرتبطة في مكان واحد.",
+  "workspaceTransactionsCtaDescriptionWithActivity": "افتح كل معاملات مساحة العمل دي علشان تشوف كل معاملات المحافظ المرتبطة في مكان واحد.",
+  "transactions_emptyHintTitle": "متابعة تلقائية",
+  "transactions_emptyHintDescription": "أول ما نرصد نشاط على محفظة مرتبطة، هنضيفه هنا تلقائياً.",
+  "noTransactionsTitle": "لا توجد معاملات حتى الآن. أول ما توصلك رسائل جديدة هتظهر هنا.",
+  "deleteWallet": "حذف المحفظة",
+  "deleteWalletConfirmTitle": "حذف المحفظة",
+  "deleteWalletConfirmMessage": "هل تريد حذف هذه المحفظة؟ لا يمكن التراجع بعد الحذف.",
+  "allTransactions": "جميع المعاملات",
+  "viewAllTransactions": "عرض كل المعاملات",
+  "walletTransactions": "معاملات المحفظة",
+  "walletDetails": "تفاصيل المحفظة",
+  "transactionsHistory": "تاريخ المعاملات",
+  "transactionDetails": "تفاصيل المعاملة",
+  "transactionMessageReceive": "تم استلام {amount} ج.م",
+  "transactionMessageSend": "تم إرسال {amount} ج.م",
+  "@transactionMessageReceive": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "@transactionMessageSend": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletLabel": "محفظتك",
+  "fromLabel": "من",
+  "toLabel": "إلى",
+  "viaLabel": "عبر",
+  "paymentStatus": "حالة السداد",
+  "transactions_filter_all": "الكل",
+  "transactions_filter_allWallets": "كل المحافظ",
+  "transactions_filter_allMembers": "كل الأعضاء",
+  "transactions_paymentStatusAll": "كل الحالات",
+  "transactions_searchHint": "ابحث بآخر 2 أرقام أو أكثر",
+  "transactions_date_today": "اليوم",
+  "transactions_date_yesterday": "أمس",
+  "transactions_date_week": "الأسبوع",
+  "transactions_date_month": "الشهر",
+  "transactions_date_customRange": "نطاق مخصص",
+  "transactions_loadMore": "عرض المزيد",
+  "transactions_viewingCountOfTotal": "عرض {count} من أصل {total} معاملة",
+  "@transactions_viewingCountOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "transaction_shareReceipt": "مشاركة إيصال العملية",
+  "transaction_receiptHeader": "إيصال معاملة — {type}",
+  "@transaction_receiptHeader": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_amount": "المبلغ",
+  "transaction_wallet": "المحفظة",
+  "transaction_receivedFrom": "تم الاستلام من",
+  "transaction_sentTo": "تم الإرسال إلى",
+  "transaction_date": "التاريخ",
+  "transaction_dateTime": "التاريخ والوقت",
+  "transaction_referenceNumber": "رقم العملية",
+  "transaction_history": "سجل التعديلات",
+  "transaction_markedAs": "تم التحديد كـ {status}",
+  "@transaction_markedAs": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_by": "بواسطة {name}",
+  "@transaction_by": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "transaction_notes": "ملاحظات",
+  "transaction_addNote": "إضافة ملاحظة",
+  "transaction_noteHint": "اكتب ملاحظتك هنا",
+  "transaction_deleteAction": "حذف",
+  "transaction_deleteTitle": "حذف المعاملة",
+  "transaction_deleteMessage": "هل أنت متأكد أنك تريد حذف هذه المعاملة؟ لا يمكن التراجع عن هذا الإجراء.",
+  "transaction_deletedSuccess": "تم حذف المعاملة",
+  "transaction_deleteNoteTitle": "حذف الملاحظة",
+  "transaction_deleteNoteMessage": "هل أنت متأكد أنك تريد حذف هذه الملاحظة؟ لا يمكن التراجع عن هذا الإجراء.",
+  "transaction_noteDeleted": "تم حذف الملاحظة",
+  "transaction_undo": "تراجع",
+  "transaction_edited": "تم التعديل",
+  "transaction_cancel": "إلغاء",
+  "transaction_save": "حفظ",
+  "transaction_smsText": "نص الرسالة",
+  "transaction_typeReceiveLabel": "عملية استلام",
+  "transaction_typeSendLabel": "عملية إرسال",
+  "transaction_errorGeneric": "حدث خطأ",
+  "transactions_emptyWithFilter": "لا توجد معاملات مطابقة للفلاتر المحددة",
+  "transactions_emptyWithFilterTitle": "لا توجد معاملات مطابقة",
+  "transactions_emptyWithFilterDescription": "جرّب مسح فلتر أو أكثر لعرض معاملات إضافية.",
+  "transactions_clearFilters": "مسح الفلاتر",
+  "transactions_title_wallet": "معاملات {name}",
+  "transactions_title_workspace": "معاملات {name}",
+  "workspaceTransactionsTodayCollected": "المحصّل اليوم",
+  "workspaceTransactionsTodaySent": "المرسَل اليوم",
+  "workspaceTransactionsUnpaidCount": "عدد غير المدفوع",
+  "workspaceTransactionsLatestWallets": "أحدث المحافظ نشاطاً",
+  "workspaceTransactionsLatestWalletsEmpty": "لا يوجد نشاط على المحافظ بعد.",
+  "@transactions_title_wallet": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "@transactions_title_workspace": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errorTransactionNotFound": "هذه المعاملة لم تعد متاحة.",
+  "errorTransactionAlreadyExists": "هذه المعاملة مسجلة بالفعل.",
+  "fullNameValidationEmpty": "يرجى إدخال اسمك",
+  "transactions_filterTitle": "الفلاتر",
+  "transactions_filterApply": "تطبيق الفلاتر",
+  "transactions_filterReset": "إعادة ضبط",
+  "transactions_filterActiveCount": "{count} فلتر {count, plural, =1{نشط} other{نشط}}",
+  "@transactions_filterActiveCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "transactions_filterType": "النوع",
+  "transactions_filterPaidStatus": "الحالة",
+  "transactions_filterDate": "التاريخ",
+  "transactions_filterMember": "العضو",
+  "transactions_filterWallet": "المحفظة",
+  "reports_total_transactions": "عدد المعاملات",
+  "reports_all_wallets": "كافة المحافظ",
+  "reports_period_today": "اليوم",
+  "reports_period_yesterday": "أمس",
+  "reports_period_lastWeek": "الأسبوع الماضي",
+  "reports_period_lastMonth": "الشهر الماضي",
+  "reports_period_custom": "نطاق مخصص",
+  "reports_stat_average": "المتوسط اليومي",
+  "reports_balance_label": "صافي التدفق النقدي",
+  "reports_performance_label": "الأداء المالي",
+  "reports_wallet_title": "تقارير الـمحفظة",
+  "reports_workspace_title": "تقارير مـساحة العمل",
+  "wallet_statsFrom": "الإحصائيات من {date}",
+  "@wallet_statsFrom": {
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "wallet_resetStats": "تصفير المؤشرات",
+  "wallet_resetStatsDescription": "متأكد إنك عايز تصفر مؤشرات الوارد والصادر للمحفظة دي؟ ده هيخلي إجمالي المبالغ صفر من بداية النهاردة، لكن رصيدك الحالي مش هيتأثر.",
+  "wallet_resetStatsAction": "تصفير",
+  "walletBalanceEditTitle": "تحديث الرصيد الحالي",
+  "walletBalanceEditDescription": "استخدم ده لو في رسالة قديمة فاتت التطبيق أو لو محتاج تصحح الرصيد يدويًا.",
+  "walletBalanceEditAction": "تحديث الرصيد",
+  "walletBalanceEditHint": "اكتب آخر رصيد عندك",
+  "walletBalanceEditInvalid": "أدخل قيمة رصيد صحيحة.",
+  "walletBalanceEditSuccess": "تم تحديث الرصيد الحالي.",
+  "walletBalanceEditSuggested": "آخر رصيد تم اكتشافه: {amount}",
+  "@walletBalanceEditSuggested": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletManualTransactionEntryAction": "إضافة معاملة من رسالة",
+  "walletManualTransactionTitle": "إضافة معاملة من SMS",
+  "walletManualTransactionDescription": "الصق رسالة العملية الأصلية هنا، وسنطبق عليها نفس منطق التحليل والمطابقة المستخدم في القراءة التلقائية للرسائل.",
+  "walletManualTransactionFieldLabel": "نص الرسالة",
+  "walletManualTransactionFieldHint": "الصق الرسالة كاملة كما وصلتك",
+  "walletManualTransactionPasteAction": "لصق من الحافظة",
+  "walletManualTransactionAnalyzeAction": "تحليل الرسالة",
+  "walletManualTransactionSaveAction": "حفظ العملية",
+  "walletManualTransactionConfirmAction": "حفظ على هذه المحفظة",
+  "walletManualTransactionForceAction": "حفظ رغم ذلك",
+  "walletManualTransactionBlockedAction": "الرسالة تخص محفظة أخرى",
+  "walletManualTransactionSaved": "تمت إضافة المعاملة بنجاح.",
+  "walletManualTransactionReviewTitle": "راجع المعاملة قبل الحفظ",
+  "walletManualTransactionReviewDescription": "تم تحليل الرسالة بنجاح، لكن لم نتمكن من تأكيد المحفظة بنسبة كاملة. راجع التفاصيل قبل المتابعة.",
+  "walletManualTransactionExplicitMismatchTitle": "الرسالة تخص محفظة أخرى",
+  "walletManualTransactionExplicitMismatchDescription": "الرسالة تذكر رقم محفظة واضح لا يطابق المحفظة التي فتحتها الآن.",
+  "walletManualTransactionInferredMismatchTitle": "محفظة أخرى تبدو أقرب",
+  "walletManualTransactionInferredMismatchDescription": "الرصيد الحالي وقواعد المطابقة تشير إلى محفظة مختلفة. احفظ هنا فقط لو أنت متأكد أن العملية يجب أن تُسجل على المحفظة الحالية.",
+  "walletManualTransactionSuggestedWalletLabel": "المحفظة المقترحة",
+  "walletManualTransactionBalanceChip": "الرصيد بعد الرسالة: {amount}",
+  "@walletManualTransactionBalanceChip": {
+    "placeholders": {
+      "amount": {}
+    }
+  },
+  "walletManualTransactionPhoneChip": "رقم المحفظة المذكور: {phoneNumber}",
+  "@walletManualTransactionPhoneChip": {
+    "placeholders": {
+      "phoneNumber": {}
+    }
+  },
+  "walletSyncTransactionsTitle": "مزامنة المعاملات الفائتة",
+  "walletSyncTransactionsDescription": "افحص رسائل الـ SMS الأخيرة للبحث عن معاملات وصلت بعد آخر نشاط محفوظ على هذه المحفظة.",
+  "walletSyncTransactionsAction": "مزامنة المعاملات",
+  "walletSyncTransactionsReviewTitle": "راجع المعاملات غير المحفوظة",
+  "walletSyncTransactionsFoundCount": "{count, plural, =0{لم نجد معاملات فائتة} =1{تم العثور على معاملة فائتة واحدة} other{تم العثور على {count} معاملات فائتة}}",
+  "@walletSyncTransactionsFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walletSyncTransactionsFromDate": "نفحص الرسائل بعد {date}",
+  "@walletSyncTransactionsFromDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "walletSyncTransactionsSelectedCount": "{count, plural, =0{لا توجد معاملات محددة} =1{معاملة واحدة محددة} other{{count} معاملات محددة}}",
+  "@walletSyncTransactionsSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walletSyncTransactionsSaveAction": "إضافة المحدد",
+  "walletSyncTransactionsEmptyTitle": "لا توجد معاملات فائتة",
+  "walletSyncTransactionsEmptyDescription": "لم نجد أي معاملات SMS غير محفوظة لهذه المحفظة في سجل الرسائل الأخير.",
+  "walletSyncTransactionsEmptySinceDescription": "لم نجد أي معاملات SMS غير محفوظة بعد {date}.",
+  "@walletSyncTransactionsEmptySinceDescription": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "walletSyncTransactionsSavedSuccess": "{count, plural, =1{تمت إضافة معاملة واحدة بنجاح.} other{تمت إضافة {count} معاملات بنجاح.}}",
+  "@walletSyncTransactionsSavedSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
