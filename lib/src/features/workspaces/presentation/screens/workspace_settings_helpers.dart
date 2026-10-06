@@ -1,6 +1,5 @@
 import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:workspace_product/src/wallet_catalog.dart';
 import 'package:workspace_product/src/utils/failure_extension.dart';
@@ -18,6 +17,7 @@ void handleWorkspaceSettingsFeedback(
   BuildContext context,
   WorkspaceSettingsController controller,
   WorkspaceSettingsFeedback feedback,
+  VoidCallback onWorkspaceExited,
 ) {
   if (!context.mounted) {
     return;
@@ -58,7 +58,7 @@ void handleWorkspaceSettingsFeedback(
       return;
     case WorkspaceSettingsFeedbackType.workspaceDeleted:
     case WorkspaceSettingsFeedbackType.workspaceLeft:
-      context.pop();
+      onWorkspaceExited();
       return;
     case WorkspaceSettingsFeedbackType.failure:
       final failure = feedback.failure;

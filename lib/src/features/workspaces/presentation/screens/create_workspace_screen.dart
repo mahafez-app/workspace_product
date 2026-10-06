@@ -4,13 +4,11 @@ import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:workspace_product/src/current_user_provider.dart';
-import 'package:go_router/go_router.dart';
+import 'package:workspace_product/src/workspace_product_config_provider.dart';
 
 import 'package:mahafez_core/mahafez_core.dart';
 
-import 'package:workspace_product/src/workspace_routes.dart';
 import 'package:workspace_product/src/utils/localization_extension.dart';
-
 
 import '../providers/create_workspace_controller.dart';
 import '../widgets/create_workspace/create_workspace_content.dart';
@@ -35,7 +33,7 @@ class _CreateWorkspaceBody extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen<CreateWorkspaceState>(
       createWorkspaceControllerProvider,
-      (previous, next) => _handleStateChange(context, previous, next),
+      (previous, next) => _handleStateChange(context, ref, previous, next),
     );
 
     final state = ref.watch(createWorkspaceControllerProvider);
@@ -52,6 +50,7 @@ class _CreateWorkspaceBody extends ConsumerWidget {
 
   void _handleStateChange(
     BuildContext context,
+    WidgetRef ref,
     CreateWorkspaceState? previous,
     CreateWorkspaceState next,
   ) {
@@ -64,16 +63,13 @@ class _CreateWorkspaceBody extends ConsumerWidget {
 
     final workspaceId = next.createdWorkspaceId;
     if (workspaceId == null || workspaceId.isEmpty) {
-      context.pop();
+      ref.read(workspaceProductConfigProvider).navigation.close(context);
       return;
     }
-    context.pop();
-    context.push(
-      WorkspaceRoutes.workspaceWalletSelectionPath(
-        workspaceId,
-        fromCreation: true,
-      ),
-    );
+    ref
+        .read(workspaceProductConfigProvider)
+        .navigation
+        .openWalletSelection(context, workspaceId, fromCreation: true);
   }
 
   bool _hasNewFailure(

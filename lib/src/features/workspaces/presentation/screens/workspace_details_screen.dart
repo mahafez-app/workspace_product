@@ -4,10 +4,7 @@ import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:workspace_product/src/current_user_provider.dart';
-import 'package:go_router/go_router.dart';
-
-import 'package:workspace_product/src/workspace_routes.dart';
-
+import 'package:workspace_product/src/workspace_product_config_provider.dart';
 
 import '../../../invitations/presentation/widgets/invitations/invite_member_bottom_sheet.dart';
 import '../../domain/entities/workspace_details_entity.dart';
@@ -50,13 +47,17 @@ class _WorkspaceDetailsActions extends ConsumerWidget {
     return Row(
       children: [
         IconButton(
-          onPressed: () =>
-              context.push(WorkspaceRoutes.workspaceReportsPath(workspaceId)),
+          onPressed: () => ref
+              .read(workspaceProductConfigProvider)
+              .navigation
+              .openWorkspaceReport(context, workspaceId),
           icon: const Icon(Icons.bar_chart_rounded),
         ),
         IconButton(
-          onPressed: () =>
-              context.push(WorkspaceRoutes.workspaceSettingsPath(workspaceId)),
+          onPressed: () => ref
+              .read(workspaceProductConfigProvider)
+              .navigation
+              .openWorkspaceSettings(context, workspaceId),
           icon: const Icon(Icons.settings_outlined),
         ),
       ],
@@ -91,6 +92,8 @@ class _WorkspaceDetailsBody extends ConsumerWidget {
       state: state,
       currentUserId: currentUserId,
       detailsSelector: (details) => details,
+      onExit: () =>
+          ref.read(workspaceProductConfigProvider).navigation.close(context),
       dataBuilder: (_, details) => _WorkspaceDetailsDataView(details: details),
     );
   }
@@ -115,11 +118,10 @@ class _WorkspaceDetailsDataView extends ConsumerWidget {
           MahafezSpacing.lg.verticalSpace,
           WorkspaceWalletsSection(
             wallets: details.wallets,
-            onAddWallets: () => context.push(
-              WorkspaceRoutes.workspaceWalletSelectionPath(
-                details.workspace.id,
-              ),
-            ),
+            onAddWallets: () => ref
+                .read(workspaceProductConfigProvider)
+                .navigation
+                .openWalletSelection(context, details.workspace.id),
           ),
           MahafezSpacing.xxl.verticalSpace,
           WorkspaceTransactionsSection(details: details),

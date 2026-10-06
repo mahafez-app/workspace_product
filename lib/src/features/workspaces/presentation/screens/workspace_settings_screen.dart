@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:workspace_product/src/current_user_provider.dart';
+import 'package:workspace_product/src/workspace_product_config_provider.dart';
 
 import 'package:workspace_product/src/utils/localization_extension.dart';
-
 
 import '../providers/workspace_settings_controller.dart';
 import '../providers/workspace_settings_state.dart';
@@ -45,7 +45,15 @@ class _WorkspaceSettingsBody extends ConsumerWidget {
           return;
         }
 
-        handleWorkspaceSettingsFeedback(context, controller, feedback);
+        handleWorkspaceSettingsFeedback(
+          context,
+          controller,
+          feedback,
+          () => ref
+              .read(workspaceProductConfigProvider)
+              .navigation
+              .close(context),
+        );
       },
     );
 
@@ -55,6 +63,8 @@ class _WorkspaceSettingsBody extends ConsumerWidget {
       state: state,
       currentUserId: currentUserId,
       detailsSelector: (settings) => settings.details,
+      onExit: () =>
+          ref.read(workspaceProductConfigProvider).navigation.close(context),
       dataBuilder: (_, value) => WorkspaceSettingsContent(
         state: value,
         currentUserId: currentUserId,

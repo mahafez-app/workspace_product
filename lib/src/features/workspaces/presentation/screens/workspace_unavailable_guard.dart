@@ -1,7 +1,6 @@
 import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:mahafez_core/mahafez_core.dart';
 import 'package:workspace_product/src/utils/localization_extension.dart';
@@ -29,7 +28,10 @@ bool isWorkspaceAccessRevoked(
   return !details.members.any((member) => member.uid == currentUserId);
 }
 
-Future<void> showWorkspaceUnavailableDialog(BuildContext context) {
+Future<void> showWorkspaceUnavailableDialog(
+  BuildContext context, {
+  required VoidCallback onExit,
+}) {
   return showDialog<void>(
     context: context,
     barrierDismissible: false,
@@ -41,7 +43,7 @@ Future<void> showWorkspaceUnavailableDialog(BuildContext context) {
       onConfirm: () {
         Navigator.of(dialogContext).pop();
         if (!context.mounted) return;
-        context.pop();
+        onExit();
       },
     ),
   );
@@ -53,12 +55,14 @@ class WorkspaceUnavailableGuard<T> extends StatefulWidget {
     required this.state,
     required this.currentUserId,
     required this.detailsSelector,
+    required this.onExit,
     required this.dataBuilder,
   });
 
   final AsyncValue<T> state;
   final String? currentUserId;
   final WorkspaceDetailsEntity Function(T data) detailsSelector;
+  final VoidCallback onExit;
   final Widget Function(BuildContext context, T data) dataBuilder;
 
   @override
@@ -108,7 +112,7 @@ class _WorkspaceUnavailableGuardState<T>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
 
-      showWorkspaceUnavailableDialog(context);
+      showWorkspaceUnavailableDialog(context, onExit: widget.onExit);
     });
   }
 }

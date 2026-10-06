@@ -1,11 +1,21 @@
 # workspace_product
 
-Layer 3 workspace and invitation product for the Mahafez platform. It owns workspace membership, wallet links by ID, invitations, settings, and product UI.
+Layer 3 product for shared workspaces, membership, invitations, linked-wallet selection and workspace settings/reports.
 
-The package depends on the headless `identity_service` capability to resolve user profiles. It does not depend on `identity_product` or `wallet_product`. The Layer 4 app supplies Firestore, identity, and a `WorkspaceWalletCatalog` adapter. That adapter exposes only neutral wallet summaries and keeps wallet persistence and domain types inside `wallet_product`.
+## Responsibility and composition
 
-The app also supplies callbacks for wallet details, transaction history, and workspace reports, so this product does not own app routing or depend on a peer product.
+The product owns workspace persistence, domain rules, state and UI. Wallet relationships are stored as IDs and exposed through neutral wallet summary/catalog contracts. `identity_service` provides identity capability. The product has no dependency on `wallet_product` or another Layer 3 product; the Layer 4 app adapts product APIs when workspace screens need wallet data or transaction/report experiences.
 
-## Integration
+The host app registers product entry screens and owns all application route decisions. Workspace transitions are expressed through the `WorkspaceNavigation` callback contract supplied in `WorkspaceProductConfig`; this package does not declare host route paths or depend on `go_router`.
 
-Override `workspaceProductConfigProvider` and `workspaceCurrentUserProvider` in the app's `ProviderScope`, register the exported screens with `WorkspaceRoutes`, and add `WorkspaceLocalizations.localizationsDelegates` to the host app.
+## Use
+
+```yaml
+dependencies:
+  workspace_product:
+    git:
+      url: https://github.com/mahafez-app/workspace_product.git
+      ref: v2.0.0
+```
+
+Import `package:workspace_product/workspace_product.dart` for supported screens, configuration, wallet catalog contracts and providers. Do not import implementation files under `src` from another repository.

@@ -3,7 +3,6 @@ library;
 export 'package:workspace_product/src/current_user_provider.dart';
 export 'package:workspace_product/src/workspace_product.dart';
 export 'package:workspace_product/src/workspace_product_config_provider.dart';
-export 'package:workspace_product/src/workspace_routes.dart';
 export 'package:workspace_product/src/wallet_catalog.dart';
 export 'package:workspace_product/src/features/workspaces/domain/entities/workspace_entity.dart';
 export 'package:workspace_product/src/generated/workspace_localizations.dart';
