@@ -12,6 +12,7 @@ final class WorkspaceProductConfig {
     required this.currentUserId,
     required this.currentUser,
     required this.walletCatalog,
+    required this.navigation,
     required this.onOpenWallet,
     required this.onOpenTransactions,
     required this.buildWorkspaceReport,
@@ -22,6 +23,7 @@ final class WorkspaceProductConfig {
   final String? Function() currentUserId;
   final UserProfile? Function() currentUser;
   final WorkspaceWalletCatalog walletCatalog;
+  final WorkspaceNavigation navigation;
   final void Function(BuildContext context, String walletId) onOpenWallet;
   final void Function(
     BuildContext context,
@@ -34,6 +36,35 @@ final class WorkspaceProductConfig {
     List<WorkspaceWalletSummary> wallets,
   )
   buildWorkspaceReport;
+}
+
+/// Host-owned navigation operations requested by the workspace product.
+///
+/// Implementations live in the Layer 4 app. The product describes the
+/// destination and intent without owning route names or a router package.
+abstract interface class WorkspaceNavigation {
+  void openWorkspaceDetails(BuildContext context, String workspaceId);
+
+  void skipWalletSelection(BuildContext context, String workspaceId);
+
+  void openWorkspaceSettings(BuildContext context, String workspaceId);
+
+  void openWorkspaceReport(BuildContext context, String workspaceId);
+
+  void openWalletSelection(
+    BuildContext context,
+    String workspaceId, {
+    bool fromCreation = false,
+  });
+
+  void completeWalletSelection(
+    BuildContext context, {
+    required String workspaceId,
+    required int linkedCount,
+    required bool fromCreation,
+  });
+
+  void close(BuildContext context, {Object? result});
 }
 
 final class WorkspaceTransactionsContext {

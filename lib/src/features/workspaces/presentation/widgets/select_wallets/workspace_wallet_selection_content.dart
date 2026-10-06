@@ -2,9 +2,7 @@
 
 import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-import 'package:workspace_product/src/workspace_routes.dart';
 import 'package:workspace_product/src/utils/localization_extension.dart';
 
 import '../../providers/workspace_wallet_selection_state.dart';
@@ -13,18 +11,18 @@ import 'workspace_wallet_selection_card.dart';
 class WorkspaceWalletSelectionContent extends StatelessWidget {
   const WorkspaceWalletSelectionContent({
     super.key,
-    required this.workspaceId,
     required this.state,
     required this.isCreateFlow,
     required this.onToggleWallet,
     required this.onSubmit,
+    required this.onSkipWallets,
   });
 
-  final String workspaceId;
   final WorkspaceWalletSelectionState state;
   final bool isCreateFlow;
   final ValueChanged<String> onToggleWallet;
   final VoidCallback onSubmit;
+  final VoidCallback onSkipWallets;
 
   @override
   Widget build(BuildContext context) {
@@ -118,14 +116,7 @@ class WorkspaceWalletSelectionContent extends StatelessWidget {
                 MahafezButton(
                   label: l10n.workspaceSkipWalletsAction,
                   type: MahafezButtonType.tertiary,
-                  onPressed: state.isSubmitting
-                      ? null
-                      : () {
-                          context.pop();
-                          context.push(
-                            WorkspaceRoutes.workspaceDetailsPath(workspaceId),
-                          );
-                        },
+                  onPressed: state.isSubmitting ? null : onSkipWallets,
                 ),
               ],
             ],

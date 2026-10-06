@@ -1,12 +1,9 @@
 import 'package:mahafez_design_system/mahafez_design_system.dart';
 
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
-import 'package:workspace_product/src/workspace_routes.dart';
+import 'package:workspace_product/src/workspace_product_config_provider.dart';
 import 'package:workspace_product/src/utils/failure_extension.dart';
 
 import '../../providers/invitations_controller.dart';
@@ -56,16 +53,10 @@ class InvitationsBody extends ConsumerWidget {
     }
 
     if (feedback.action == InvitationActionType.accept) {
-      unawaited(_navigateAfterAccept(context, feedback));
+      ref
+          .read(workspaceProductConfigProvider)
+          .navigation
+          .openWorkspaceDetails(context, feedback.invitation.workspaceId);
     }
-  }
-
-  Future<void> _navigateAfterAccept(
-    BuildContext context,
-    InvitationActionFeedback feedback,
-  ) async {
-    context.push(
-      WorkspaceRoutes.workspaceDetailsPath(feedback.invitation.workspaceId),
-    );
   }
 }

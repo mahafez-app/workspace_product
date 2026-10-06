@@ -1,10 +1,9 @@
 import 'package:mahafez_design_system/mahafez_design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 import 'package:mahafez_core/mahafez_core.dart';
-import 'package:workspace_product/src/workspace_routes.dart';
+import 'package:workspace_product/src/workspace_product_config_provider.dart';
 
 import '../../providers/workspace_wallet_selection_controller.dart';
 import '../../providers/workspace_wallet_selection_state.dart';
@@ -29,6 +28,7 @@ class SelectWorkspaceWalletsBody extends ConsumerWidget {
       provider,
       (previous, next) => _handleStateChange(
         context,
+        ref,
         previous?.asData?.value,
         next.asData?.value,
       ),
@@ -43,17 +43,21 @@ class SelectWorkspaceWalletsBody extends ConsumerWidget {
         onRetry: () => ref.invalidate(provider),
       ),
       AsyncData(:final value) => WorkspaceWalletSelectionContent(
-        workspaceId: workspaceId,
         state: value,
         isCreateFlow: isCreateFlow,
         onToggleWallet: controller.toggleWallet,
         onSubmit: controller.submit,
+        onSkipWallets: () => ref
+            .read(workspaceProductConfigProvider)
+            .navigation
+            .skipWalletSelection(context, workspaceId),
       ),
     };
   }
 
   void _handleStateChange(
     BuildContext context,
+    WidgetRef ref,
     WorkspaceWalletSelectionState? previous,
     WorkspaceWalletSelectionState? next,
   ) {
@@ -67,17 +71,26 @@ class SelectWorkspaceWalletsBody extends ConsumerWidget {
     if (!_hasSuccessfulSubmission(previous, next)) return;
 
     if (isCreateFlow) {
-      // Pop all left the home -> workspace details flow and push the workspace details to refresh it with the newly linked wallets
-      context.go(WorkspaceRoutes.workspaceDetailsPath(workspaceId));
+      ref
+          .read(workspaceProductConfigProvider)
+          .navigation
+          .completeWalletSelection(
+            context,
+            workspaceId: workspaceId,
+            linkedCount: next.linkedCount,
+            fromCreation: true,
+          );
       return;
     }
-    // When managing wallets for an existing workspace, just pop with the new linked count to update the previous screen
-    if (Navigator.of(context).canPop()) {
-      context.pop(next.linkedCount);
-      return;
-    }
-    // If we can't pop, it means we came from an external deep link, so we just push the workspace details page
-    context.go(WorkspaceRoutes.workspaceDetailsPath(workspaceId));
+    ref
+        .read(workspaceProductConfigProvider)
+        .navigation
+        .completeWalletSelection(
+          context,
+          workspaceId: workspaceId,
+          linkedCount: next.linkedCount,
+          fromCreation: false,
+        );
   }
 
   bool _hasNewFailure(
